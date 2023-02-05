@@ -72,8 +72,8 @@ EOL
 
 
 sudo apt update -y
-sudo do-release-upgrade -d
-sudo do-release-upgrade
+sudo do-release-upgrade -d |& tee ~/upgradelogs/upgrades-logs1.txt
+sudo do-release-upgrade |& tee ~/upgradelogs/upgrades-logs2.txt
 
 }
 
